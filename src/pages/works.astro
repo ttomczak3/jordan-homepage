@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Jordan Teasdale">
+	<main>
+    <Nav />
+		<h1><span class="text-gradient">Jordan Teasdale</span></h1>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="#"
+				title="The Ascent"
+				body="Three month long mid-degree school project developing a first-person shooter in Unity"
+			/>
+			<Card
+				href="#"
+				title="Forgotten Roots"
+				body="2023 Central Florida Global Game Jam was a 7-day game jam where participants had to make a game based on the theme of Roots"
+			/>
+			<Card
+				href="#"
+				title="Symbols"
+				body="A card game where when you play a card, you must draw the symbol on the card and the effectiveness of the card is based on how well you draw the symbol"
+			/>
+			<Card
+				href="#"
+				title="Ludwig Jam"
+				body="Ludwig Jam is a 10-day game jam, where contestants will create games based on the theme"
+			/>
+		</ul>
+    <Footer />
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+        text-align: center;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
