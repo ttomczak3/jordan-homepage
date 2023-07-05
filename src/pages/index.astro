@@ -9,28 +9,34 @@ import Footer from '../components/Footer.astro';
 	<main>
     <Nav />
 		<h1><span class="text-gradient">Jordan Teasdale</span></h1>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="#"
-				title="The Ascent"
-				body="Three month long mid-degree school project developing a first-person shooter in Unity"
-			/>
-			<Card
-				href="#"
-				title="Forgotten Roots"
-				body="2023 Central Florida Global Game Jam was a 7-day game jam where participants had to make a game based on the theme of Roots"
-			/>
-			<Card
-				href="#"
-				title="Symbols"
-				body="A card game where when you play a card, you must draw the symbol on the card and the effectiveness of the card is based on how well you draw the symbol"
-			/>
-			<Card
-				href="#"
-				title="Ludwig Jam"
-				body="Ludwig Jam is a 10-day game jam, where contestants will create games based on the theme"
-			/>
-		</ul>
+        <div>
+        <div class="text-center">
+        </div>
+        <span class="badge mb-5">Digital Craftsman (Developer)</span>
+        <h2 class="mb-3">About</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis sem a nibh ultrices,
+        vel rhoncus lectus interdum. Ut semper, tortor id malesuada mattis, leo quam aliquet lorem,
+        in condimentum felis purus non lectus. Suspendisse placerat mi velit, vel vehicula neque vestibulum vel.
+        Ut vehicula turpis in lectus sodales, at hendrerit libero viverra.
+        </p>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis sem a nibh ultrices,
+        vel rhoncus lectus interdum. Ut semper, tortor id malesuada mattis, leo quam aliquet lorem,
+        in condimentum felis purus non lectus. Suspendisse placerat mi velit, vel vehicula neque vestibulum vel.
+        Ut vehicula turpis in lectus sodales, at hendrerit libero viverra.
+        </p>
+        <div class="text-center">
+        <button type="button" class="btn btn-outline-primary mb-5" routerLink="/portfolio" routerLinkActive="active">My Portfolio</button>
+        </div>
+        <h2 class="mb-3">Skills</h2>
+        <div class="link-images text-center mb-5">
+        <img width="46" height="46" alt="C++" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-line.svg"/>
+        <img width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-line.svg"/>
+        <img width="46" height="46" alt="UnrealEngine" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg"/>
+        <img width="46" height="46" alt="Unity" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"/>
+        </div>
+        </div>
     <Footer />
 	</main>
 </Layout>
@@ -40,6 +46,7 @@ import Footer from '../components/Footer.astro';
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
+        color: #fdebf3;
 	}
 	h1 {
 		font-size: 3rem;
